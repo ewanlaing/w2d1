@@ -12,3 +12,9 @@ class Team:
             if player == missing_player:
                 return True
         return False
+    
+    points = 0
+
+    def play_game(self, win_state):
+        if win_state == True:
+            self.points += 3
